@@ -1,0 +1,1243 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+:root {
+    --mainBackground-color: rgba(1, 1, 24, 0.95);
+    --mainHeader-color: rgba(1, 1, 24, 1);
+    --mainLogo-color: rgba(102, 242, 224, 1);
+    --mainSubcontact: rgba(3, 87, 77, 1);
+    --mainText-color: rgba(255, 255, 255, 1);
+    --mainHeading-color: rgba(33, 33, 33, 1);
+    --mainH1-color: rgb(36, 35, 35);
+    --mainSubmit-hover: rgba(3, 87, 77, 0.5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--mainBackground-color);
+    color: var(--mainText-color);
+
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body button {
+    transition: all ease 0.7s;
+}
+
+/*css header*/
+div#header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    min-height: 100px;
+    width: 100%;
+    background-color: var(--mainHeader-color);
+    z-index: 2;
+
+}
+
+
+
+
+
+
+header #logo {
+    font-size: 1.2em;
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--mainLogo-color);
+
+}
+
+nav {
+    margin-top: 15px;
+    float: right;
+    margin-right: 10px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+nav li {
+
+    display: inline;
+    border-radius: 5px;
+    border-style: none;
+}
+
+nav li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--mainLogo-color);
+    letter-spacing: 0.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-style: none;
+    transition: all ease 0.7s;
+}
+
+
+
+
+nav li a:hover {
+    color: var(--mainText-color);
+    background-color: var(--mainSubmit-hover);
+    cursor: pointer;
+}
+
+
+
+h1.container-two {
+    font-size: 10.5em;
+    color: var(--mainH1-color);
+    margin-left: 350px;
+    padding: 0;
+    margin-top: 200px;
+    letter-spacing: 0.1em;
+
+
+
+}
+
+
+
+#profile img {
+    width: 200px;
+    height: 250px;
+}
+
+div#profile {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+}
+
+div.image {
+    width: 25%;
+}
+
+div.about {
+    width: 65%;
+    margin-left: 50px;
+
+
+}
+
+div#about-me {
+    font-size: 2.3em;
+    letter-spacing: 0.15em;
+    padding: 0;
+
+}
+
+div#about-me p.first-name {
+    padding: 0;
+    margin: 0;
+}
+
+p span.second-name {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+p.third-name {
+    font-size: 1.6em;
+    color: var(--mainSubcontact);
+    padding: 0;
+    margin: 0;
+}
+
+div.line {
+    background-color: var(--mainLogo-color);
+    width: 90px;
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+div p.para-about {
+    font-size: 16px;
+    line-height: 1.5em;
+
+}
+
+div.hire-button button {
+    padding: 15px 30px;
+    background-color: var(--mainSubcontact);
+    border-style: none;
+    letter-spacing: 0.2em;
+    border-radius: 5px;
+}
+
+div.hire-button button#hire-now:hover {
+    color: var(--mainText-color);
+    background-color: var(--mainHeader-color);
+    border: 1px solid var(--mainLogo-color);
+
+
+}
+
+
+img#profile-picture {
+    border-radius: 10px;
+}
+
+div.position {
+    position: relative;
+}
+
+div.border-image {
+    position: absolute;
+    border: 2px dotted var(--mainLogo-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 250px;
+    top: 15px;
+    right: 15px;
+    z-index: -1;
+}
+
+/*about css*/
+
+section#about {
+    width: 80%;
+    height: 100%;
+    margin: 200px auto;
+    background-color: var(--mainHeader-color);
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 1);
+    padding: 20px;
+
+}
+
+section h1.about {
+    font-size: 3.5em;
+    color: var(--mainHeading-color);
+    text-align: center;
+
+}
+
+section div#about-container {
+    display: flex;
+    margin: 20px;
+
+}
+
+/*css for box1*/
+
+
+div.mini-head1 a,
+div.mini-head2 a {
+    text-decoration: none;
+    color: var(--mainLogo-color);
+}
+
+div.about-box1 {
+    width: 30%;
+}
+
+div.about-box2 {
+    width: 60%;
+}
+
+img#profile2 {
+    border-radius: 10px;
+}
+
+div.minihead {
+    display: flex;
+}
+
+div.mini-head1 {
+    margin-right: 10px;
+}
+
+div p.about-para {
+    line-height: 1.5em;
+}
+
+div h1.about-minihead1,
+div h1.about-minihead2 {
+    padding: 5px;
+}
+
+div h1.about-minihead2:hover,
+div h1.about-minihead1:hover {
+    background-color: var(--mainHeading-color);
+    border-radius: 5px;
+}
+
+div.sub-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.address+address,
+p.age,
+p.phone,
+p.email {
+    color: var(--mainSubcontact);
+    font-size: 1.1em;
+}
+
+span.age,
+span.phone,
+span.email,
+span.address {
+    color: var(--mainText-color);
+}
+
+span.email a {
+    text-decoration: none;
+    color: var(--mainText-color);
+}
+
+/*css sub contact buttons*/
+div.buttons {
+    display: flex;
+
+}
+
+
+button {
+    padding: 10px;
+    color: var(--mainText-color);
+    background-color: var(--mainHeader-color);
+    letter-spacing: 0.2em;
+    border: 1px solid var(--mainLogo-color);
+    border-radius: 5px;
+}
+
+button#contact-me {
+    margin-right: 50px;
+}
+
+button:hover {
+    background-color: var(--mainSubcontact);
+    box-shadow: 0 0 3px 6px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+/*css services*/
+section#Services {
+    width: 90%;
+    margin: 40px auto;
+}
+
+section h1.services {
+    font-size: 3.5em;
+    color: var(--mainH1-color);
+    text-align: center;
+}
+
+div#services {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+div#services .box-1 {
+    background-color: var(--mainHeader-color);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 1);
+}
+
+div.box-1 p {
+    letter-spacing: 0.01em;
+}
+
+h1.box-one {
+    text-align: center;
+    color: var(--mainSubcontact);
+}
+
+div#web {
+    text-align: center;
+}
+
+div.box-1 i {
+    color: var(--mainLogo-color);
+}
+
+div.web i {
+    margin-right: 35px;
+
+}
+
+/*css projects*/
+section#Projects {
+    max-width: 90%;
+    background-color: var(--mainHeader-color);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 1);
+}
+
+section h1.project-head {
+    font-size: 3.5em;
+    color: var(--mainH1-color);
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1.project-head {
+    padding-top: 50px;
+}
+
+section#Projects img {
+    width: 100%;
+    height: 100%;
+}
+
+div#project-head {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#project-head ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+div#project-head ul li {
+    display: inline;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+div#project-head ul li a {
+    text-decoration: none;
+    color: var(--mainLogo-color);
+    letter-spacing: 0.2em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all ease 0.6s;
+}
+
+div#project-head ul li a:hover {
+    background-color: var(--mainSubcontact);
+    color: var(--mainText-color)
+}
+
+div#project-container {
+    display: grid;
+    width: 100%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: [head1-start]1fr[head2-start head1-end] 1fr[head3-start head2-end] 1fr[head3-end];
+    grid-template-rows: [box1-start]200px[box1-end box2-start] 200px[box3-start box2-end] 200px[box3-end];
+    grid-row: auto;
+}
+
+div#project1 {
+    grid-column: head1-start/head1-end;
+}
+
+div#project2 {
+    grid-column: head2-start/head2-end;
+}
+
+div#project3 {
+    grid-column: head3-start/head3-end;
+}
+
+div#project4 {
+    grid-column: head1-start/head1-end;
+    grid-row: box1-end/box3-start;
+}
+
+div#project5 {
+    grid-column: head1-end/head3-end;
+    grid-row: box2-start/box3-end;
+}
+
+div#project6 {
+    grid-column: head1-start/head1-end;
+    grid-row: box3-start/box3-end;
+}
+
+
+div#project1:hover,
+div#project2:hover,
+div#project3:hover,
+div#project4:hover,
+div#project5:hover,
+div#project6:hover {
+    border-radius: 6px;
+    border: 3px solid var(--mainLogo-color);
+    cursor: pointer;
+
+}
+
+/*css for skills*/
+section#Skills {
+    width: 80%;
+    height: 100%;
+    margin: 50px auto;
+}
+
+section#Skills h1.skills {
+    font-size: 3.5em;
+    color: var(--mainH1-color);
+    text-align: center;
+    margin-top: 150px;
+}
+
+div#container-skills {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+div.skill-left {
+    width: 40%;
+}
+
+div.skill-left h1 {
+    color: var(--mainLogo-color)
+}
+
+div.skill-right {
+    width: 50%;
+}
+
+div.skill1 {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.skill-line {
+    width: 100%;
+    height: 5px;
+    border-radius: 6px;
+    background-color: var(--mainH1-color);
+    margin-top: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+div .html::before {
+    content: "";
+    width: 90%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: var(--mainSubcontact);
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+div .css::before {
+    content: "";
+    width: 65%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: var(--mainSubcontact);
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+div .js::before {
+    content: "";
+    width: 60%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: var(--mainSubcontact);
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+div .git::before {
+    content: "";
+    width: 60%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: var(--mainSubcontact);
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/*css for contacts*/
+
+section#Contacts {
+    margin: 25px auto;
+    width: 80%;
+    text-align: center;
+}
+
+section h1#contact-head {
+    font-size: 3.5em;
+    color: var(--mainH1-color);
+    text-align: center;
+    margin-top: 150px;
+}
+
+div#form {
+    width: 60%;
+    margin: auto;
+}
+
+form#contact input {
+    width: 100%;
+    padding: 30px 30px;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 15px;
+    background-color: var(--mainHeader-color);
+    color: var(--mainText-color);
+    font-size: 1em;
+}
+
+form#contact input#message {
+    padding: 60px 30px;
+}
+
+button#submit {
+    padding: 15px 30px;
+    background-color: var(--mainSubcontact);
+    border-style: none;
+}
+
+button#submit:hover {
+    background-color: var(--mainSubmit-hover);
+}
+
+footer#footer {
+    margin-top: 50px;
+    border-top: 4px solid var(--mainHeading-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer#footer a {
+    margin-right: 10px;
+}
+
+footer#footer i {
+    color: var(--mainLogo-color);
+    transition: all ease 0.7s;
+}
+
+footer#footer i:hover {
+    color: var(--mainSubmit-hover);
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        width: 100vw;
+        height: 100%;
+
+
+    }
+
+    div.position div.border-image {
+        top: 25px;
+        left: 25px;
+        border: 2px dotted var(--mainLogo-color);
+
+    }
+
+}
+
+/*table portrait*/
+@media screen and (max-width:1024px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    div#container {
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    main#container-two h1.container-two {
+        text-align: center;
+        margin: 120px auto;
+    }
+
+    div#profile {
+        width: 90%;
+        justify-content: space-around;
+
+    }
+
+    div#about-container {
+        width: 100%;
+
+    }
+
+    div#about-container div.about-box2 {
+        margin-left: 60px;
+    }
+
+    div.sub-contact {
+        max-width: 100%;
+        justify-content: space-between;
+
+    }
+
+    div.sub-contact2 {
+        max-width: 280px;
+    }
+
+    div.sub-contact2 {
+        overflow: hidden;
+    }
+
+    div#services {
+        width: 100%;
+    }
+
+    div.box-1 {
+        width: 70%;
+    }
+
+    div#web {
+        width: 100%;
+        display: inline;
+    }
+
+    div#web i {
+        padding: 0 15px;
+        margin: 0;
+    }
+
+
+}
+
+@media screen and (max-width:1023px) {
+    body {
+
+        top: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    div#header {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        background-color: var(--mainHeading-color);
+    }
+
+    header {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h1#logo-header {
+        display: none;
+        color: transparent;
+        text-align: center;
+    }
+
+    div#header nav ul {
+        display: block;
+        margin-top: 50px;
+    }
+
+    div#header nav {
+        float: none;
+        margin: auto;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    div#header nav ul li {
+        display: block;
+        padding: 50px 0;
+
+
+    }
+
+    div#header nav a {
+        font-size: 2.3em;
+
+    }
+
+    /*media query for container elements*/
+    /* h1  #container-two*/
+    h1.container-two {
+        text-align: center;
+        margin: auto;
+
+    }
+
+    div#profile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    div.image {
+        width: 100%;
+        margin-bottom: 80px;
+        ;
+    }
+
+    div.position {
+        width: 350px;
+        height: 400px;
+        margin: auto;
+    }
+
+    img#profile-picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.border-image {
+        width: 350px;
+        height: 400px;
+        top: 20px;
+        right: 25px;
+
+    }
+
+    div.about {
+        margin: 50px auto;
+        width: 55%;
+        height: 100%;
+    }
+
+    div#about-me {
+        font-size: 2.8em;
+    }
+
+    div.line {
+        width: 95px;
+        margin-top: 5px;
+    }
+
+    p.third-name {
+        font-size: 2em;
+    }
+
+    div p.para-about {
+        font-size: 25px;
+    }
+
+    button#hire-now {
+        padding: 20px 45px;
+        font-size: 25px;
+    }
+
+    /*the about section */
+    div#about-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    div.about-box1 {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    div.about-box2 {
+        width: 70%;
+        margin: 100px auto;
+    }
+
+    div.about-box1 img#profile2 {
+        width: 350px;
+        height: 400px;
+    }
+
+    div.minihead {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+    }
+
+    div.mini-head1 a>h1.about-minihead1,
+    div.mini-head2 a>h1.about-minihead2 {
+        font-size: 2em;
+
+    }
+
+    div#about-container p.about-para {
+        font-size: 25px;
+    }
+
+    div.sub-contact {
+        display: block;
+        font-size: 25px;
+    }
+
+    div.buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.about-link1 button,
+    div.about-link2 button {
+        width: 100%;
+        padding: 20px 30px;
+        margin-top: 30px;
+        font-size: 15px;
+
+    }
+
+    /*media queary services*/
+    div#services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.box-1 {
+        height: 500px;
+    }
+
+    div.box-1 i {
+        font-size: 4.8em;
+    }
+
+    div#web {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div#web i {
+        width: 100%;
+    }
+
+    div.box-1 h1 {
+        font-size: 2em;
+    }
+
+    div.box-1 {
+        font-size: 25px;
+    }
+
+    /*media query css project*/
+    div#project-head ul li a {
+        font-size: 1.2em;
+    }
+
+    section#projects {
+        height: 100%;
+    }
+
+    div#project-container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    div#project-container div {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 10px;
+    }
+
+    /*media queary css skills section*/
+    div#container-skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.skill-left {
+        width: 70%;
+        height: 500px;
+        margin: auto;
+    }
+
+    div.skill-right {
+        width: 70%;
+        height: 500px;
+        margin: 60px auto 0 auto;
+    }
+
+    div.skill-left h1.head-left {
+        font-size: 2em;
+    }
+
+    div.skill-left p {
+        font-size: 25px;
+
+    }
+
+    div.skill1 span {
+        font-size: 25px;
+    }
+
+    div#form {
+        width: 90%;
+    }
+
+    div#form input {
+        padding: 55px 30px;
+        font-size: 25px;
+    }
+
+    div#form input#message {
+        padding: 100px 30px;
+    }
+
+    div#form button#submit {
+        width: 40%;
+        padding: 30px 0;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    footer#footer i {
+        font-size: 4em;
+    }
+
+    footer#footer p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    div.about-box1 img#profile2 {
+        min-width: 100%;
+        height: 410px;
+    }
+
+    div.about-box2 {
+        margin: 20px auto;
+        width: 78%;
+        padding: 0;
+    }
+
+    div.about-box2 p.about-para {
+        width: 100%;
+    }
+
+
+    div.sub-contact2 {
+        min-width: 402px;
+
+    }
+
+    div#services div.box-1 {
+        width: 88%;
+        margin: 10px auto;
+    }
+
+    div.skill-left {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    div#container-one h1.container-two {
+        letter-spacing: 2px;
+        font-size: 80px;
+        width: 100%;
+        margin: 10px auto;
+        padding: 0;
+        font-weight: 2em;
+    }
+
+    img#profile-picture {
+        width: 320px;
+        height: 360px;
+    }
+
+    div.border-image {
+        display: none;
+    }
+
+    div.about {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    div#about-me {
+        width: 90%;
+        font-size: 2.5em;
+    }
+
+    section#about {
+        width: 100%;
+        padding: 0;
+        margin: 30px 0;
+    }
+
+    section div#about-container {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+
+    }
+
+    div.about-box1 {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    div#container div.about-box2 {
+        width: 92%;
+        margin-left: 0;
+        padding: 0 30px;
+        margin: 20px 0;
+
+    }
+
+    div.minihead {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    /*services stylying*/
+
+    section#Services {
+        width: 100%;
+        margin: 40px 0;
+
+    }
+
+    div#services div.box-1 {
+        margin-bottom: 20px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    div.box-1 p {
+        padding: 0;
+        margin: 0;
+    }
+
+    div.box-1 p.ellipse {
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+
+    div.box-1 i {
+        font-size: 3.0em;
+    }
+
+    div.box-1 h1 {
+        font-size: 1.5em;
+    }
+
+    /*projects css stylying*/
+    section#Projects {
+        max-width: 96%;
+    }
+
+    div#project-head ul {
+        display: none;
+    }
+
+    div#project-container div {
+        width: 100%;
+        height: 380px;
+    }
+
+    /*section skills css stylying*/
+
+    section#Skills {
+        width: 100%;
+    }
+
+    section#Skills P {
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    div.skill-left {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section#Skills p.ellipse {
+        width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    div.skill-left input {
+        padding: 20px 20px;
+        color: var(--mainText-color);
+        background-color: var(--mainSubcontact);
+        border-style: none;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 20px 0 20px 10px;
+    }
+
+    div.skill-left input:hover {
+        background-color: var(--mainSubmit-hover);
+    }
+
+    div.skill-right {
+        width: 90%;
+        height: 100%;
+    }
+
+    section#Contacts {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    div#form {
+        width: 100%;
+    }
+
+
+
+}
